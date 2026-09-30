@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animales en domesticacion</title>
+    <link rel="stylesheet" href="animales_en_domesticacion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="animales_en_domesticacion.js" defer></script>
+</head>
+<body>
+    <!---------------------------------------------->
+    <!--|estructuracion_animales_en_domesticacion|-->
+    <!---------------------------------------------->
+    <header class="encabezado">
+        <div class="contenido_encabezado">
+            <h1>Animales en domesticación</h1>
+            <p>Conoce y administra diferentes animales domésticos.</p>
+        </div>
+    </header>
+    <!-------------------------------------------------->
+    <!--|estructuracion_bloque_de_animales_domesticos|-->
+    <!-------------------------------------------------->
+    <main class="contenedor_principal">
+        <section class="introduccion">
+            <h2>Animales domésticos</h2>
+            <p>Observa, identifica y personaliza la información.</p>
+        </section>
+        <!------------------------>
+        <!--|bloque_de_animales|-->
+        <!------------------------>
+        <section class="contenedor_animales" id="contenedorAnimales">
+            <article class="tarjeta_animal" data-id="1">
+                <div class="imagen_contenedor">
+                    <img class="imagen_animal" src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Domestic_dog_Golden_Retriever.jpg" alt="Perro doméstico">
+                </div>
+                <h3 class="nombre_animal">Perro</h3>
+                <p class="categoria_animal">Mamífero doméstico</p>
+                <div class="informacion_animal">
+                    <p class="descripcion_animal">Animal doméstico conocido por su compañía y relación con las personas.</p>
+                </div>
+                <div class="formulario_animal">
+                    <label for="nombre1">Nombre</label>
+                    <input id="nombre1" class="campo_nombre" type="text">
+                    <label for="categoria1">Categoría</label>
+                    <input id="categoria1" class="campo_categoria" type="text">
+                    <label for="descripcion1">Descripción</label>
+                    <textarea id="descripcion1" class="campo_descripcion"></textarea>
+                    <label for="imagen1">Imagen</label>
+                    <input id="imagen1" class="campo_imagen" type="url">
+                </div>
+                <div class="acciones">
+                    <button class="boton_guardar">Guardar</button>
+                    <button class="boton_restaurar">Restaurar</button>
+                </div>
+                <p class="mensaje"></p>
+            </article>
+            <article class="tarjeta_animal" data-id="2">
+                <div class="imagen_contenedor">
+                    <img class="imagen_animal" src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Cat03.jpg" alt="Gato doméstico">
+                </div>
+                <h3 class="nombre_animal">Gato</h3>
+                <p class="categoria_animal">Mamífero doméstico</p>
+                <div class="informacion_animal">
+                    <p class="descripcion_animal">Animal doméstico que suele convivir con las personas como mascota.</p>
+                </div>
+                <div class="formulario_animal">
+                    <label for="nombre2">Nombre</label>
+                    <input id="nombre2" class="campo_nombre" type="text">
+                    <label for="categoria2">Categoría</label>
+                    <input id="categoria2" class="campo_categoria" type="text">
+                    <label for="descripcion2">Descripción</label>
+                    <textarea id="descripcion2" class="campo_descripcion"></textarea>
+                    <label for="imagen2">Imagen</label>
+                    <input id="imagen2" class="campo_imagen" type="url">
+                </div>
+                <div class="acciones">
+                    <button class="boton_guardar">Guardar</button>
+                    <button class="boton_restaurar">Restaurar</button>
+                </div>
+                <p class="mensaje"></p>
+            </article>
+            <article class="tarjeta_animal" data-id="3">
+                <div class="imagen_contenedor">
+                    <img class="imagen_animal" src="https://upload.wikimedia.org/wikipedia/commons/7/79/2010-baby-rabbit.jpg" alt="Conejo doméstico">
+                </div>
+                <h3 class="nombre_animal">Conejo</h3>
+                <p class="categoria_animal">Mamífero doméstico</p>
+                <div class="informacion_animal">
+                    <p class="descripcion_animal">Animal que puede ser criado como mascota y convivir con las personas.</p>
+                </div>
+                <div class="formulario_animal">
+                    <label for="nombre3">Nombre</label>
+                    <input id="nombre3" class="campo_nombre" type="text">
+                    <label for="categoria3">Categoría</label>
+                    <input id="categoria3" class="campo_categoria" type="text">
+                    <label for="descripcion3">Descripción</label>
+                    <textarea id="descripcion3" class="campo_descripcion"></textarea>
+                    <label for="imagen3">Imagen</label>
+                    <input id="imagen3" class="campo_imagen" type="url">
+                </div>
+                <div class="acciones">
+                    <button class="boton_guardar">Guardar</button>
+                    <button class="boton_restaurar">Restaurar</button>
+                </div>
+                <p class="mensaje"></p>
+            </article>
+        </section>
+        <!------------------------>
+        <!--|acciones_generales|-->
+        <!------------------------>
+        <section class="zona_final">
+            <button id="restablecerTodos">Restablecer todos los animales</button>
+            <p id="mensajeGeneral"></p>
+        </section>
+    </main>
+</body>
+</html>
